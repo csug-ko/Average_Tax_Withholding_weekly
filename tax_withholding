@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class tax_withholding {
+    public static void main (String [] arg) {
+        int annual_income, tax_rate;
+        Scanner iscan = new Scanner(System.in);
+        System.out.println("Enter your annual income.");
+        annual_income = iscan.nextInt();
+        if (annual_income < 500)
+            {tax_rate = 10;}
+        else if (annual_income < 1500)
+            {tax_rate = 15;}
+        else if (annual_income < 2500)
+            {tax_rate = 20;}
+        else
+            {tax_rate = 20;}
+
+
+        System.out.println("Your annual income is : $" + annual_income);
+        System.out.println("Your tax rate is : " + tax_rate + "%");
+    }
+        
+}
